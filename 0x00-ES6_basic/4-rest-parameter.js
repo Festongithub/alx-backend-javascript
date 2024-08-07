@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-export default function returnHowManyArguments(...theArgs) {
-	return theArgs.length;
+export default function returnHowManyArguments(...args) {
+	return args.length;
 }
