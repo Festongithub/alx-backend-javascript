@@ -1,6 +1,6 @@
+
 export default class Airport {
-	constructor(name, code)
-	{
+	constructor(name, code) {
 		this._name = name;
 		this._code = code;
 	}
@@ -17,8 +17,7 @@ export default class Airport {
 		return this._code;
 	}
 
-	set code(val)
-	{
+	set code(val) {
 		this._code = val;
 	}
 
