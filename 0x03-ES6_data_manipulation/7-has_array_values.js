@@ -1,10 +1,11 @@
-/* eslint-disable array-callback return */
-export default function hasValuesFromArray(set, array) {
-  let test = true;
-  array.map((x) => {
-     if (!set.has(x)) {
-	test = false;
-     }
+/* eslint-disable array-callback-return */
+export default function hasValuesFromArray(set, list) {
+  let verdict = true;
+  list.map((x) => {
+    if (!set.has(x)) {
+      verdict = false;
+    }
   });
+
   return verdict;
 }
