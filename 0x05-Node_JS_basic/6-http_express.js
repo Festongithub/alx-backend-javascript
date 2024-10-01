@@ -1,13 +1,13 @@
+const express = require('express');
 
-const express = require('express')
-const app = express()
-const hostname = '127.0.0.1'
-const port = 1245
+const app = express();
+// const hostname = '127.0.0.1'
+const port = 1245;
 
 app.get('/', (req, res) => {
-	res.send('Hello Holberton School!')
+  res.send('Hello Holberton School!');
 });
 
-app.listen(hostname, port, () => {
-	console.log(`Example app listening on http://${hostname}:${port}`)
+app.listen(port, () => {
+  console.log(`Example app listening on http://localhost:${port}`);
 });
