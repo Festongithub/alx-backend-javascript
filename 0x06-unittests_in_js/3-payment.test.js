@@ -4,8 +4,8 @@ const { expect } = require('chai');
 const sendPaymentRequestToApi = require('./3-payment');
 const Utils = require('./utils');
 
-describe('spy', () => {
-  it('ensures math is the same.', () => {
+describe('spy', function() {
+  it('ensures math is the same.', function() {
     const spyUtils = sinon.spy(Utils, 'calculateNumber');
     const spyConsole = sinon.spy(console, 'log');
 
