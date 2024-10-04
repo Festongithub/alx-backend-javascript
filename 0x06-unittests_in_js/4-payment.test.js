@@ -1,7 +1,7 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
 
-const sendPaymentRequestToApi = require('./3-payment');
+const sendPaymentRequestToApi = require('./4-payment');
 const Utils = require('./utils');
 
 describe('Stubs.', function() {
@@ -15,7 +15,7 @@ describe('Stubs.', function() {
     expect(spyUtils.calledOnceWithExactly('SUM', 100, 20)).to.be.true;
     expect(spyConsole.calledOnceWithExactly('The total is: 10')).to.be.true;
 
-    spyUtils.restore();
+    stubUtils.restore();
     spyConsole.restore();
   });
 });
