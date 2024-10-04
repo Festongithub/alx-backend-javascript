@@ -1,11 +1,11 @@
 const request = require('request');
 const { expect } = require('chai');
 
-describe('Integration Testing', () => {
-	describe('GET /', () => {
+describe('Integration Testing', function() {
+	describe('GET /', function () {
 		it('returns StatusCode: 200 | Body: Welcome to the payment system', (done) => {
 			const options = {
-				uri ='http://localhost:7865',
+				url='http://localhost:7865',
 				method: 'GET',
 			};
 			request(options, function(error, response, body) {
@@ -14,5 +14,5 @@ describe('Integration Testing', () => {
 				done();
 				});
 			});
-		});
+	});
 });
