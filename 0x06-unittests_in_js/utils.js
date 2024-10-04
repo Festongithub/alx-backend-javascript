@@ -1,9 +1,10 @@
-const utils = {
+const Utils = {
   calculateNumber(type, a, b) {
     const x = Math.round(a);
     const y = Math.round(b);
+
     if (type === 'SUBTRACT') {
-      returnx - y;
+      return x - y;
     }
 
     if (type === 'DIVIDE') {

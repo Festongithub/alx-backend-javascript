@@ -5,7 +5,7 @@ const sendPaymentRequestToApi = require('./3-payment');
 const Utils = require('./utils');
 
 describe('spy', function() {
-  it('ensures math is the same.', function() {
+  it('ensures math is the same.', () => {
     const spyUtils = sinon.spy(Utils, 'calculateNumber');
     const spyConsole = sinon.spy(console, 'log');
 
