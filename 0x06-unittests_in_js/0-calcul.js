@@ -1,5 +1,9 @@
+// Calculation function.
+
 function calculateNumber(a, b) {
-	return Math.round(a) + Math.round(b)
+    firstInt = Math.round(a);
+    secondInt = Math.round(b);
+    return firstInt + secondInt;
 }
 
 module.exports = calculateNumber;
