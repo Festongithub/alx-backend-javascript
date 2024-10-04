@@ -17,4 +17,9 @@ describe('tests advanced calculateNumber function:', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
     });
   });
+  describe('tests DIVIDE function W 0:', () => {
+    it("returns 'Error'.", () => {
+      assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error');
+    });
+  });
 });
